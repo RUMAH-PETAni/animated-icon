@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no"
     />
-    <title>Tampilkan GIF Berjajar</title>
+    <title>Workflow</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
       rel="stylesheet"
@@ -61,7 +61,7 @@
       }
       /* Perkecil GIF baris kedua agar total lebarnya mirip dengan baris pertama */
       .row:nth-of-type(2) .item img {
-        width: 120px;
+        width: 80px;
         height: auto;
       }
       .row2:first-child .item img {
@@ -89,6 +89,22 @@
       }
       .row2:nth-of-type(2) .caption {
         font-size: 10px;
+      }
+
+      @media (max-width: 500px) {
+        .row:first-child .item img {
+          width: 50px;
+          height: auto;
+        }
+        /* Perkecil GIF baris kedua agar total lebarnya mirip dengan baris pertama */
+        .row:nth-of-type(2) .item img {
+          width: 100px;
+          height: auto;
+        }
+        .row2:first-child .item img {
+          width: 100px;
+          height: auto;
+        }
       }
     </style>
   </head>
